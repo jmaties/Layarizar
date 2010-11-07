@@ -1,1 +1,6 @@
-Layarizer
+Layarizer - geekia
+
+Gestor de puntos POI (http://en.wikipedia.org/wiki/Point_of_interest) especialmente preparado para usar con capas Layar (http://www.layar.com)
+
+Plugin externo:
+Uploader - https://github.com/milesj/cake-uploader
