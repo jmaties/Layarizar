@@ -22,8 +22,8 @@ $_options = array(
 		'type' => 'radio',
                 'div' => array('class' => 'radio'),
 		'options' => array(
-                            '1'=>'Cajero',
-                            '2'=>'Oficina',
+                            '1'=>'Opcion 1',
+                            '2'=>'Opcion 2',
 			    '3'=>'Ambos'
                         ),
             ),
