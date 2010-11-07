@@ -14,8 +14,10 @@ echo $form->create(null, array('action' => 'editar','class'=>'form','accept-char
                 </ul>
 				 <div id="poi-main">
 <?php
-$attributes=array('legend'=>'Tipo','div' => array('class' => 'radio'));
+/*
+ * $attributes=array('legend'=>'Tipo','div' => array('class' => 'radio'));
 $options=array('1'=>'Cajero','2'=>'Oficina','3'=>'Ambos');
+ */
 $_options = array(
 	    'tipo' => array(
                 'legend'   => 'Tipo',
