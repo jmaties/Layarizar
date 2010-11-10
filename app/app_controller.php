@@ -5,7 +5,7 @@
 class AppController extends Controller {
 	var $components = array('Auth',
 							'Session',
-							//'DebugKit.Toolbar',
+							//'DebugKit.Toolbar',--
 							'RequestHandler');
 	var $helpers = array('Html',
 			     'Form',
