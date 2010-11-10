@@ -1,4 +1,4 @@
-<h2><?php echo __('Layarizer', true); ?></h2>
+<h2><?php echo __('Layarizar', true); ?></h2>
 <?php
 $javascript->link(array(
 			'http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAFGUgGaRTTSdRGB1HbN19ZBQP7c2vWk8Sah2Xi6SulclfOeI0WxS-UcFU8d82ETgejnKtGVrMbbeJWw',
