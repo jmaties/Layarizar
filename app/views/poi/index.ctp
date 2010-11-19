@@ -1,7 +1,8 @@
 <h2><?php echo __('Layarizar', true); ?></h2>
 <?php
+//$key = Configure::read('GoogleMap.api');
 $javascript->link(array(
-			'http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAFGUgGaRTTSdRGB1HbN19ZBQP7c2vWk8Sah2Xi6SulclfOeI0WxS-UcFU8d82ETgejnKtGVrMbbeJWw',
+			'http://maps.google.com/maps?file=api&amp;v=2&amp;key='. Configure::read('GoogleMap.api'),
 					'poi'), false);
 ?>
 
@@ -49,7 +50,7 @@ $count=0;
 foreach($pois as $n=>$poi){
 $imagen='';
 if ($poi['Poi']['imageURL']) { $imagen="<img src='".$poi['Poi']['imageURL']."'/>"; }
-$editar=$imagen."<br/><a href='/poi/editar/".$poi['Poi']['id']."'>Editar</a> | <a href='/poi/borrar/".$poi['Poi']['id']."' onclick='return confirm(&#039;¿Está seguro de eliminar este POI?&#039;);'>Eliminar</a>";
+$editar=$imagen."<br/><a href='/poi/editar/".$poi['Poi']['id']."'>Editar</a> | <a href='/layarizar/poi/borrar/".$poi['Poi']['id']."' onclick='return confirm(&#039;¿Está seguro de eliminar este POI?&#039;);'>Eliminar</a>";
 	$pois[$n]['Poi']['title'] = "<strong>".$poi['Poi']['title']."</strong><br/>";
 	$pois[$n]['Poi']['latitude'] = $poi['Poi']['lat'];
 	$pois[$n]['Poi']['longitude'] = $poi['Poi']['lon'];

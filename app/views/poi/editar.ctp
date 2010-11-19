@@ -1,7 +1,7 @@
 <h2>POI de <?php echo $this->data['Poi']['title']; ?></h2>
 <?php
 $javascript->link(array(
-    'http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAFGUgGaRTTSdRGB1HbN19ZBQP7c2vWk8Sah2Xi6SulclfOeI0WxS-UcFU8d82ETgejnKtGVrMbbeJWw',
+    'http://maps.google.com/maps?file=api&amp;v=2&amp;key='. Configure::read('GoogleMap.api'),
     'poi'), false);
 echo $form->create(null, array('action' => 'editar', 'class' => 'form', 'accept-charset' => 'UTF-8', 'name' => 'poi', 'type' => 'file'));
 ?>
